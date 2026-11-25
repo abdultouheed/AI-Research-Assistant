@@ -191,6 +191,15 @@ The objective is to simplify research-paper analysis by allowing users to intera
 The application is deployed using **Streamlit Community Cloud**.
 https://ai-research-assistant-gbj9vymqzktc39eeivusqt.streamlit.app/
 
+## ⚠️ Important Note – LLM Token Limits
+
+The application uses an external LLM through the OpenRouter API. Requests may occasionally fail if the combined prompt, conversation history, and retrieved document context exceed the selected model's token or context-window limit.
+
+**If you encounter this issue:**
+- Try asking shorter and more specific questions.
+- Reduce the amount of PDF content being processed.
+- Start a new chat to clear previous conversation history.
+- Check the selected model's context-window limits and OpenRouter usage restrictions.
 
 ## 👨‍💻 Author
 
